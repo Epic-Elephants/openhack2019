@@ -2,158 +2,186 @@
   "Application":{
     "title": "Young and New Farmer application",
     "id": 1,
-    "section": {
-      "Applicant Details": {
-        "id": 2,
-        "question": {
-          "Beneficiary / Business name": {
-            "id": 3,
-            "type": "string",
-            "simple_description": "The person or entity that will receive money through this application if successful",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "Applicants full name": {
-            "id": 4,
-            "type": "string",
-            "simple_description": "",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "SBI": {
-            "id": 5,
-            "type": "string",
-            "simple_description": "SBI is your Single Business Identifier number, this number is on your business registration certificate from Companies House",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "Business address": {
-            "id": 6,
-            "type": "address",
-            "simple_description": "Write down the full address for your business",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          }
-        }
-      },
-      "Apply for BPS entitlements": {
-        "id": 7,
-        "question": {
-          "I want to apply for BPS entitlements as a": {
-            "id": 8,
-            "type": "radio",
-            "options": [
-              "Young farmer",
-              "New farmer",
-              "N/A"
-            ],
-            "simple_description": "Fill in this part if you want to apply for BPS entitlements Basic payment scheme. You must also ask a registered accountant or solicitor to fill in and sign the certificate at the end of this form.",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          }
-        } 
-      },
-      "Young farmer payment - proof": {
-        "id": 9,
-        "question": {
-          "Beneficiary / Business name": {
-            "id": 10,
-            "type": "radio",
-            "options": [
-              "I am supplying proof for the young farmer payment",
-              "I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"
-            ],
-            "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
-            "attachment_enabled": true,
-            "notes_enabled": true,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex",
-              "show_if": "{\"section\": 7,\"question\": 8,\"value\": \"Young Farmer\"}"
+    "section": [
+      {
+        "Applicant Details": {
+          "id": 2,
+          "question": [
+            {
+              "Beneficiary / Business name": {
+                "id": 3,
+                "type": "string",
+                "simple_description": "The person or entity that will receive money through this application if successful",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Applicants full name": {
+                "id": 4,
+                "type": "string",
+                "simple_description": "",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "SBI": {
+                "id": 5,
+                "type": "string",
+                "simple_description": "SBI is your Single Business Identifier number, this number is on your business registration certificate from Companies House",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Business address": {
+                "id": 6,
+                "type": "address",
+                "simple_description": "Write down the full address for your business",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
               }
             }
-        } 
+          ]
+        }
+        },
+      {
+        "Apply for BPS entitlements": {
+          "id": 7,
+          "question": [
+            {
+              "I want to apply for BPS entitlements as a": {
+                "id": 8,
+                "type": "radio",
+                "options": [
+                  "Young farmer",
+                  "New farmer",
+                  "N/A"
+                ],
+                "simple_description": "Fill in this part if you want to apply for BPS entitlements Basic payment scheme. You must also ask a registered accountant or solicitor to fill in and sign the certificate at the end of this form.",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Young farmer payment - proof": {
+                "id": 9,
+                "question": {
+                  "Beneficiary / Business name": {
+                    "id": 10,
+                    "type": "radio",
+                    "options": [
+                      "I am supplying proof for the young farmer payment",
+                      "I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"
+                    ],
+                    "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
+                    "attachment_enabled": true,
+                    "notes_enabled": true,
+                    "signature_item": false,
+                    "rules": {
+                      "regex": "regex",
+                      "show_if": "{\"section\": 7,\"question\": 8,\"value\": \"Young Farmer\"}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
-      "Declaration - you or your representative must fill in this": {
-        "id": 11,
-        "question": {
-          "Signed": {
-            "id": 12,
-            "type": "signature",
-            "simple_description": "By signing this declaration I confirm I have read and understood all of the relevant guidance information, and confirm that all the details given in this form are true, accurate and completed to the best of my knowledge and belief.If signing as an appointed representative you also confirm you have the appropriate permission to represent the beneficiary and that you have made the beneficiaries aware that they are responsible for complying with the guidance and regulations. A registered accountant or solicitor will need to fill in and sign the certificate at the end of this form. You need to provide them with the relevant supporting documents. Part C - Young farmer payment - proofFill in this part if you’re applying for the young farmer payment in your main BPS 2019 application.Put an ‘X’ in the relevant box below – one box only. I am supplying proof for the young farmer paymentN/AAlso ask a registered accountant or solicitor to fill in the certificate at the end of this form. (However if young farmers have previously applied for the young farmer payment and were successful, they may not need to provide a new version of the certificate.  Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information).All relevant parts of this form - including the signed certificate - must be completed before you send it to RPA.",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": true,
-            "rules": {
-              "regex": "regex"
+      {
+        "Declaration - you or your representative must fill in this": {
+          "id": 11,
+          "question": [
+            {
+              "Signed": {
+                "id": 12,
+                "type": "signature",
+                "simple_description": "By signing this declaration I confirm I have read and understood all of the relevant guidance information, and confirm that all the details given in this form are true, accurate and completed to the best of my knowledge and belief.If signing as an appointed representative you also confirm you have the appropriate permission to represent the beneficiary and that you have made the beneficiaries aware that they are responsible for complying with the guidance and regulations. A registered accountant or solicitor will need to fill in and sign the certificate at the end of this form. You need to provide them with the relevant supporting documents. Part C - Young farmer payment - proofFill in this part if you’re applying for the young farmer payment in your main BPS 2019 application.Put an ‘X’ in the relevant box below – one box only. I am supplying proof for the young farmer paymentN/AAlso ask a registered accountant or solicitor to fill in the certificate at the end of this form. (However if young farmers have previously applied for the young farmer payment and were successful, they may not need to provide a new version of the certificate.  Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information).All relevant parts of this form - including the signed certificate - must be completed before you send it to RPA.",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": true,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Print full name(s)": {
+                "id": 13,
+                "type": "string",
+                "simple_description": "",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Date": {
+                "id": 14,
+                "type": "date",
+                "simple_description": "",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "CRN number (if known)": {
+                "id": 15,
+                "type": "string",
+                "simple_description": "This is your company registration number",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
+            },
+            {
+              "Relationship to beneficiary": {
+                "id": 15,
+                "type": "string",
+                "simple_description": "For example, agent, partner, owner director or sole trader",
+                "attachment_enabled": false,
+                "notes_enabled": false,
+                "signature_item": false,
+                "rules": {
+                  "regex": "regex"
+                }
+              }
             }
-          },
-          "Print full name(s)": {
-            "id": 13,
-            "type": "string",
-            "simple_description": "",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "Date": {
-            "id": 14,
-            "type": "date",
-            "simple_description": "",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "CRN number (if known)": {
-            "id": 15,
-            "type": "string",
-            "simple_description": "This is your company registration number",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          "Relationship to beneficiary": {
-            "id": 15,
-            "type": "string",
-            "simple_description": "For example, agent, partner, owner director or sole trader",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          }
-        } 
+          ]
+        }
       }
-    }
+          ]
   }
 }
