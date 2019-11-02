@@ -3,7 +3,7 @@
     "title": "Young and New Farmer application",
     "id": 1,
     "section": {
-      "Applicant Details": {
+      "Part A - Applicant Details": {
         "id": 2,
         "question": {
           "Beneficiary / Business name": {
@@ -17,7 +17,7 @@
               "100": "regex"
             }
           },
-          "Beneficiary / Business name": {
+          "Applicants full name": {
             "id": 4,
             "type": "",
             "simpleDescription": "",
@@ -28,7 +28,7 @@
               "100": "regex"
             }
           },
-          "Beneficiary / Business name": {
+          "SBI": {
             "id": 5,
             "type": "",
             "simpleDescription": "",
@@ -39,7 +39,7 @@
               "100": "regex"
             }
           },
-          "Beneficiary / Business name": {
+          "Business address": {
             "id": 6,
             "type": "",
             "simpleDescription": "",
@@ -52,46 +52,18 @@
           }
         } 
       },
-      "Applicant Details": {
-        "id": 2,
+      "Part B - Apply for BPS entitlements": {
+        "id": 7,
         "question": {
-          "Beneficiary / Business name": {
-            "id": 3,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          },
-          "Beneficiary / Business name": {
-            "id": 4,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          },
-          "Beneficiary / Business name": {
-            "id": 5,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          },
-          "Beneficiary / Business name": {
-            "id": 6,
-            "type": "",
-            "simpleDescription": "",
+          "I want to apply for BPS entitlements as a": {
+            "id": 8,
+            "type": "radio",
+            "options": [
+              "Young farmer",
+              "New farmer",
+              "N/A"
+            ],
+            "simpleDescription": "Fill in this part if you want to apply for BPS entitlements. You must also ask a registered accountant or solicitor to fill in and sign the certificate at the end of this form.",
             "photoEnabled": 0,
             "notesEnabled": 0,
             "signatureItem": 0,
@@ -101,8 +73,8 @@
           }
         } 
       },
-      "Applicant Details": {
-        "id": 2,
+      "Part C - Young farmer payment": {
+        "id": 9,
         "question": {
           "Beneficiary / Business name": {
             "id": 3,
@@ -112,7 +84,8 @@
             "notesEnabled": 0,
             "signatureItem": 0,
             "rules": {
-              "100": "regex"
+              "100": "regex",
+              "101": "section"
             }
           },
           "Beneficiary / Business name": {
