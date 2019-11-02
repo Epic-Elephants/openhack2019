@@ -85,7 +85,11 @@
             "signatureItem": 0,
             "rules": {
               "100": "regex",
-              "101": "section"
+              "101": "{
+                \"section\": 7,
+                \"question\": 8,
+                \"value\": \"Young Farmer\"
+                }"
             }
           },
           "Beneficiary / Business name": {
@@ -273,3 +277,7 @@
     }
   }
 }
+//rules: 
+//------------
+//100 - regex
+//101 - showIf
