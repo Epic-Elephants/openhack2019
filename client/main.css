@@ -1,5 +1,52 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
 /* CSS declarations go here */
+* {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
+}
+html,
 body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: #eee;
+}
+.column,
+.columns {
+  padding: 5% 0;
+}
+/* ____________________ Header */
+header {
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.07);
+}
+header > .container > .row:nth-child(1) > .brand {
+  text-align: center;
+}
+/* ____________________ Main */
+main {
+  width: 100vw;
+  z-index: 1;
+  background: #f9f9f9;
+}
+/* ____________________ Footer */
+footer {
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  background: #000;
+}
+footer > div:nth-child(1) {
+  background: #1D1D1D;
+}
+/*body {
   font-family: sans-serif;
   background-color: #315481;
   background-image: linear-gradient(to bottom, #315481, #918e82 100%);
@@ -123,4 +170,4 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
-}
+}*/
