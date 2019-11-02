@@ -1,17 +1,23 @@
 <template name="field">
+    {{#if isBool}}
+        <label><input class="js-field" type="checkbox"/></label>
+    {{/if}}
     {{#if isString}}
-        <input class="js-field" {{stringAttrs}}>
+        <label><input class="js-field" {{stringAttrs}}/></label>
     {{/if}}
     {{#if isNumber}}
-        <input class="js-field" {{numberAttrs}}>
+        <label><input class="js-field" {{numberAttrs}}/></label>
+    {{/if}}
+    {{#if isDate}}
+        <label><input class="js-field" type="date"/></label>
     {{/if}}
     {{#if isPercentage}}
-        <input class="js-field" {{percentageAttrs}}>
+        <label><input class="js-field" {{percentageAttrs}}/></label>
     {{/if}}
     {{#if isRadio}}
         {{#let vals = i18n_radio_values}}
             {{#each val in vals}}
-                <label>{{val}}<input class="js-field" type="radio" value="{{val}}"></label>
+                <label>{{val}}<input class="js-field" type="radio" value="{{val}}"/></label>
             {{/each}}
         {{/let}}
     {{/if}}

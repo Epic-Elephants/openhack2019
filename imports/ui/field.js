@@ -23,7 +23,9 @@ function numberAttrs(q){
 }
 
 Template.field.helpers({
+    isBool(){return this.type === 'checkbox';},
     isString(){return this.type === 'string';},
+    isDate(){return this.type === 'date';},
     isNumber(){return this.type === 'number';},
     isPercentage(){return this.type === 'percentage';},
     isRadio(){return this.type === 'radio';},
@@ -38,8 +40,6 @@ Template.field.helpers({
 
 Template.field.events({
     'change .js-field'(e, t){
-        console.log(t);
-        console.log(this);
-        t.reactive_var.set(e.target.value);
+        this.on_change(e.target.value);
     },
 });

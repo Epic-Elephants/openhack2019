@@ -13,19 +13,21 @@ function attrs(q, ret){
     return ret;
 }
 
-Template.question.onCreated(function(){
-    this.reactive_var = new ReactiveVar();
-});
-
 Template.question.helpers({
     i18n_title(){ return this.title[i18n]; },
     i18n_col(col){ return col.col[i18n]; },
     isTable(){return this.type === 'array';},
+    value_cb_factory(){
+        return Object.assign(this, {
+            on_change(val){this.var = val;},
+        });
+    },
     edit(){return true;},
 });
 
 Template.question.events({
     'click .js-next'(e, t){
-        console.log(this.reactive_var);
+        console.log(t.data.var);
     },
 });
+
