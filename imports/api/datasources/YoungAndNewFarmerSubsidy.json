@@ -90,50 +90,17 @@
                 \"question\": 8,
                 \"value\": \"Young Farmer\"
                 }"
+              }
             }
-          },
-          "Beneficiary / Business name": {
-            "id": 4,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          },
-          "Beneficiary / Business name": {
-            "id": 5,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          },
-          "Beneficiary / Business name": {
-            "id": 6,
-            "type": "",
-            "simpleDescription": "",
-            "photoEnabled": 0,
-            "notesEnabled": 0,
-            "signatureItem": 0,
-            "rules": {
-              "100": "regex"
-            }
-          }
         } 
       },
-      "Applicant Details": {
+      "Part D - Declaration - you or your representative must fill in this": {
         "id": 2,
         "question": {
-          "Beneficiary / Business name": {
+          "Signed": {
             "id": 3,
             "type": "",
-            "simpleDescription": "",
+            "simpleDescription": "By signing this declaration I confirm I have read and understood all of the relevant guidance information, and confirm that all the details given in this form are true, accurate and completed to the best of my knowledge and belief.If signing as an appointed representative you also confirm you have the appropriate permission to represent the beneficiary and that you have made the beneficiaries aware that they are responsible for complying with the guidance and regulations.",
             "photoEnabled": 0,
             "notesEnabled": 0,
             "signatureItem": 0,
@@ -277,7 +244,3 @@
     }
   }
 }
-//rules: 
-//------------
-//100 - regex
-//101 - showIf
