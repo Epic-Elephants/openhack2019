@@ -85,11 +85,7 @@
             "signatureItem": 0,
             "rules": {
               "100": "regex",
-              "101": "{
-                \"section\": 7,
-                \"question\": 8,
-                \"value\": \"Young Farmer\"
-                }"
+              "101": "{\"section\": 7,\"question\": 8,\"value\": \"Young Farmer\"}"
               }
             }
         } 
