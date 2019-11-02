@@ -3,23 +3,24 @@ import { Template } from 'meteor/templating';
 import '../question.js';
 import './qrotator.html';
 
-import { Sections } from '../../api/datasources/builtin';
-
-Template.qrotator.onCreated(function qrotatorOnCreated() {
-
-});
-
 Template.qrotator.helpers({
     curr_question(){
         if(!this.counter)
             this.counter = new ReactiveVar(0);
-        return Sections[0].questions[this.counter.get()]; }
+        return this.questions[this.counter.get()]; }
 });
 
 Template.qrotator.events({
     'click .js-next'(e, t){
-        console.log(t);
         // call to save child q
+        if(t.data.max === t.data.counter.get())
+            return t.data.onEOA();
         t.data.counter.set(t.data.counter.get() + 1);
+    },
+    'click .js-prev'(e, t){
+        // call to save child q
+        if(t.data.max === t.data.counter.get())
+            return t.data.onBOA();
+        t.data.counter.set(t.data.counter.get() - 1);
     },
 });

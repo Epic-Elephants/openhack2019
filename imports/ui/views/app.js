@@ -1,3 +1,3 @@
 
-import './qrotator.js';
+import './srotator.js';
 import './app.html';
