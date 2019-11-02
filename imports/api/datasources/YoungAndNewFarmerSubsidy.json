@@ -63,7 +63,7 @@
               "New farmer",
               "N/A"
             ],
-            "simple_description": "Fill in this part if you want to apply for BPS entitlementsBasic payment scheme. You must also ask a registered accountant or solicitor to fill in and sign the certificate at the end of this form.",
+            "simple_description": "Fill in this part if you want to apply for BPS entitlements Basic payment scheme. You must also ask a registered accountant or solicitor to fill in and sign the certificate at the end of this form.",
             "attachment_enabled": false,
             "notes_enabled": false,
             "signature_item": false,
@@ -81,9 +81,9 @@
             "type": "radio",
             "options": [
               "I am supplying proof for the young farmer payment",
-              "N/A"
+              "I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"
             ],
-            "simple_description": "Also ask a registered accountant or solicitor to fill in the certificate at the end of this form. (However if young farmers have previously applied for the young farmer payment and were successful, they may not need to provide a new version of the certificate.  Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information).",
+            "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
             "attachment_enabled": true,
             "notes_enabled": true,
             "signature_item": false,
