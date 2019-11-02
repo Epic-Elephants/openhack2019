@@ -77,7 +77,7 @@
         "id": 9,
         "question": {
           "Beneficiary / Business name": {
-            "id": 3,
+            "id": 10,
             "type": "",
             "simpleDescription": "",
             "photoEnabled": 0,
@@ -95,21 +95,21 @@
         } 
       },
       "Part D - Declaration - you or your representative must fill in this": {
-        "id": 2,
+        "id": 11,
         "question": {
           "Signed": {
-            "id": 3,
-            "type": "",
+            "id": 12,
+            "type": "signature",
             "simpleDescription": "By signing this declaration I confirm I have read and understood all of the relevant guidance information, and confirm that all the details given in this form are true, accurate and completed to the best of my knowledge and belief.If signing as an appointed representative you also confirm you have the appropriate permission to represent the beneficiary and that you have made the beneficiaries aware that they are responsible for complying with the guidance and regulations.",
             "photoEnabled": 0,
             "notesEnabled": 0,
-            "signatureItem": 0,
+            "signatureItem": 1,
             "rules": {
               "100": "regex"
             }
           },
           "Beneficiary / Business name": {
-            "id": 4,
+            "id": 13,
             "type": "",
             "simpleDescription": "",
             "photoEnabled": 0,
