@@ -51,8 +51,8 @@ main {
   z-index: 1;
 }
 main > section {
-  position: absolute;
-  top: 50%;
+  min-height: 80%;
+  padding: 2% 0;
   border-radius: 20px;
   background: rgba(255, 255, 255, .95);
 }
