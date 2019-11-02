@@ -1,5 +1,5 @@
 <template name="qrotator">
     {{> question curr_question}}
-    <button class="js-prev">Prev</button>
-    <button class="js-next">Next</button>
+    <button class="js-prev" disabled="{{begOfArray}}">Prev</button>
+    <button class="js-next" disabled="{{endOfArray}}">Next</button>
 </template>

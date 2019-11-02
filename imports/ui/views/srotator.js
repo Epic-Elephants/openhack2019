@@ -13,6 +13,8 @@ Template.srotator.helpers({
     },
     curr_questions(){
         return {questions: Sections[0].questions};
+    },
+    cbs(){
+        return {onEOA: () => {}, onBOA: () => {}};
     }
-
 });

@@ -7,7 +7,13 @@ Template.qrotator.helpers({
     curr_question(){
         if(!this.counter)
             this.counter = new ReactiveVar(0);
-        return this.questions[this.counter.get()]; }
+        return this.questions[this.counter.get()]; },
+    endOfArray(){
+        return this.questions.length - 1  === this.counter.get();
+    },
+    begOfArray(){
+        return 0 === this.counter.get();
+    }
 });
 
 Template.qrotator.events({
