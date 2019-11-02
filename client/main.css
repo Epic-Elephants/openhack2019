@@ -11,7 +11,11 @@ body {
   width: 100%;
 }
 body {
-  background: #eee;
+  background: url('https://images.unsplash.com/photo-1475084124271-aebaf8a67166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .column,
 .columns {
@@ -19,6 +23,7 @@ body {
 }
 /* ____________________ Header */
 header {
+  position: absolute;
   z-index: 2;
   top: 0;
   width: 100%;
@@ -31,12 +36,34 @@ header > .container > .row:nth-child(1) > .brand {
 /* ____________________ Main */
 main {
   width: 100vw;
+  height: 100vh;
   z-index: 1;
-  background: #f9f9f9;
+}
+main > section {
+  min-height: 50vh;
+  min-width: 70vw;
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255, .9);
+  border-radius: 10px;
+}
+main > section > div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+main > section > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ____________________ Footer */
 footer {
-  z-index: 1;
+  z-index: 2;
   bottom: 0;
   width: 100%;
   font-size: 1rem;
