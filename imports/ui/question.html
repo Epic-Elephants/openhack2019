@@ -1,0 +1,22 @@
+<template name="question">
+    <label>{{i18n_title}}</label>
+    {{#if isTable}}
+        <table>
+            <tr>
+                {{#each col in of}}
+                    <th>{{i18n_col col}}</th>
+                {{/each}}
+            </tr>
+            <tr>
+            {{#each col in of}}
+                <td>{{> field col}}</td>
+            {{/each}}
+            </tr>
+        </table>
+    {{else}}
+        {{> field }}
+    {{/if}}
+    {{#if edit}}
+        <button class="js-next">Next</button>
+    {{/if}}
+</template>
