@@ -25,9 +25,3 @@ Template.question.helpers({
     edit(){return true;},
 });
 
-Template.question.events({
-    'click .js-next'(e, t){
-        console.log(t.data.var);
-    },
-});
-
