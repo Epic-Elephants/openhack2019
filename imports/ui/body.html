@@ -12,30 +12,40 @@
     </div>
   </header>
   <main>
-    <section>
-      <div>
-        <div>
-          <div class="container">
-            <div class="row">
-              <h1>
-                Farmers are the curators of our world
-              </h1>
-              <div class="twelve columns">
-                <h5>
-                  Get rewarded for your efforts to promote sustainability and awareness about biodiversity in your agricultural choices.
-                </h5>
-                <p>
-                  Fill out the form below to calculate the value.
-                  test
-                </p>
-                  <iframe id="calc-73236" src="https://embed.calculoid.com/?calcId=73236&apiKey=5dbdbe3172a1b&showTitle=true&showDescription=true" scrolling="no" style="width: 100%; border: none;"></iframe>
-                  <!-- TODO: EU grant calculator goes here -->
-              </div>
-            </div>
-          </div>
+    <div class="wrapper">
+      <section id="one">
+        <button type="button" name="button" class="doFade">Action</button>
+        <button type="button" name="button" class="fadeRev">Action</button>
+      </section>
+    </div>
+    <section class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>
+            Farmers are the curators of nature
+          </h1>
+          <h5>
+            Get rewarded for your efforts to promote sustainability and awareness about biodiversity in your agricultural choices
+          </h5>
+          <iframe id="calc-73236" src="https://embed.calculoid.com/?calcId=73236&apiKey=5dbdbe3172a1b&showTitle=true&showDescription=true" scrolling="no" style="width: 100%; border: none;"></iframe>
         </div>
       </div>
     </section>
   </main>
-  <script type="text/javascript">var eventMethod=window.addEventListener?"addEventListener":"attachEvent",eventer=window[eventMethod],messageEvent="attachEvent"==eventMethod?"onmessage":"message";eventer(messageEvent,function(e){if(e.origin=='https://embed.calculoid.com'){if(e.data.startsWith("height;")){document.getElementById("calc-73236").style.height=e.data.split("height;")[1]+"px"}else if(e.data.startsWith("url;")){window.location.href=e.data.split("url;")[1]}}},!1)</script>
+  <script type="text/javascript">
+
+    var eventMethod = window.addEventListener?"addEventListener":"attachEvent",eventer= window[eventMethod],messageEvent="attachEvent"==eventMethod?"onmessage":"message";eventer(messageEvent,function(e){if(e.origin== 'https://embed.calculoid.com'){if(e.data.startsWith("height;")){document.getElementById("calc-73236").style.height=e.data.split("height;")[1]+"px"}else if (e.data.startsWith("url;")) {
+      window.location.href = e.data.split("url;")[1]}}},!1);
+
+    var faded = document.getElementById('one');
+
+    document.getElementById('doFade').onlick = function() {
+      source.classList.toggle('fade');
+    }
+
+    document.getElementById('fadeRev').onclick = function() {
+      source.classList.toggle('noFade');
+    }
+
+  </script>
 </body>
