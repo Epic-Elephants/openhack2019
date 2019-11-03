@@ -100,4 +100,24 @@
   <div id="bot">
     <i class="fas fa-question-circle"></i>
   </div>
+    <script>
+    function fadeOne() {
+        $("#one").addClass("fade-out");
+        $("#two").removeClass("fade-out");
+        $("#buttonOne").addClass("fade-out");
+        $("#buttonTwo").removeClass("fade-out");
+    }
+    function fadeTwo() {
+        $("#two").addClass("fade-out");
+        $("#three").removeClass("fade-out");
+        $("#buttonTwo").addClass("fade-out");
+        $("#buttonThree").removeClass("fade-out");
+    }
+    function fadeThree() {
+        $("#three").addClass("fade-out");
+        $("#one").removeClass("fade-out");
+        $("#buttonThree").addClass("fade-out");
+        $("#buttonOne").removeClass("fade-out");
+    }
+</script>
 </body>
