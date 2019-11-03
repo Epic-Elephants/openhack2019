@@ -21,18 +21,6 @@ export const Data = {
           },
           {
             "id": 4,
-            "title": ["Applicants full name"],
-            "type": "string",
-            "simple_description": "",
-            "attachment_enabled": false,
-            "notes_enabled": false,
-            "signature_item": false,
-            "rules": {
-              "regex": "regex"
-            }
-          },
-          {
-            "id": 5,
             "title": ["SBI"],
             "type": "string",
             "simple_description": "SBI is your Single Business Identifier number, this number is on your business registration certificate from Companies House",
@@ -43,6 +31,18 @@ export const Data = {
               "regex": "regex"
             }
           },
+          /*{
+            "id": 5,
+            "title": ["Applicants full name"],
+            "type": "string",
+            "simple_description": "",
+            "attachment_enabled": false,
+            "notes_enabled": false,
+            "signature_item": false,
+            "rules": {
+              "regex": "regex"
+            }
+          },*/
           {
             "id": 6,
             "title": ["Business address"],
@@ -77,26 +77,28 @@ export const Data = {
             "rules": {
               "regex": "regex"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": ["Young farmer payment - proof"],
+        "questions": [
           {
-            "id": 9,
-            "title": ["Young farmer payment - proof"],
-            "questions": {
-              "id": 10,
-              "title": ["Beneficiary / Business name"],
-              "type": "radio",
-              "choices": [
-                ["I am supplying proof for the young farmer payment"],
-                ["I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"]
-              ],
-              "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
-              "attachment_enabled": true,
-              "notes_enabled": true,
-              "signature_item": false,
-              "rules": {
-                "regex": "regex",
-                "show_if": "{\"section\": 7,\"question\": 8,\"value\": \"Young Farmer\"}"
-              }
+            "id": 10,
+            "title": ["I want to apply for BPS entitlements"],
+            "type": "radio",
+            "choices": [
+              ["I am supplying proof for the young farmer payment"],
+              ["I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"]
+            ],
+            "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
+            "attachment_enabled": false,
+            "notes_enabled": false,
+            "signature_item": false,
+            "rules": {
+              "regex": "regex",
+              "show_if": "{\"section\": 7,\"question\": 8,\"value\": \"Young Farmer\"}"
             }
           }
         ]
