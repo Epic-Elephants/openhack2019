@@ -1,61 +1,66 @@
 <body>
-<header>
-    <div class="row">
-      <div class="two columns">
-        <img src="https://www.naturvardsverket.se/Documents/logotypes/nv-logo-sv.svg" alt="Logo">
-      </div>
-      <div class="ten columns">
-        <h1>
-          <i class="fas fa-seedling"></i> Apply for financial sustainability support
-        </h1>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="one column">
+          <img src="https://www.naturvardsverket.se/Documents/logotypes/nv-logo-sv.svg" alt="Logo" id="logo">
+        </div>
+        <div class="eleven columns">
+          <h1>
+            <i class="fas fa-seedling"></i> Apply for financial sustainability support
+          </h1>
+        </div>
       </div>
     </div>
   </header>
-  <main>
-    <div class="carousel-container">
-      <div class="carousel-slide">
-        <div>
-          <p>
-            1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptas, ipsam atque blanditiis vel velit nisi recusandae unde, dolore pariatur accusantium eveniet iusto nesciunt, neque tenetur veritatis, ullam quisquam! Maxime.
-          </p>
-        </div>
-        <div>
-          <p>
-            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptas, ipsam atque blanditiis vel velit nisi recusandae unde, dolore pariatur accusantium eveniet iusto nesciunt, neque tenetur veritatis, ullam quisquam! Maxime.
-          </p>
-        </div>
-        <div>
-          <p>
-            3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptas, ipsam atque blanditiis vel velit nisi recusandae unde, dolore pariatur accusantium eveniet iusto nesciunt, neque tenetur veritatis, ullam quisquam! Maxime.
-          </p>
-        </div>
-      </div>
-    </div>
-    <section class="container">
-      <div class="row">
+  <main class="carousel">
+    <div class="container">
+      <div id="one" class="row">
         <div class="twelve columns">
           <h1>
             Farmers are the curators of nature
           </h1>
           <h5>
-            Get rewarded for your efforts to promote sustainability and awareness about biodiversity in your agricultural choices
+            Get rewarded for the efforts you make to promote sustainability and awareness about biodiversity in your agricultural choices
           </h5>
           <script type="text/javascript">var eventMethod=window.addEventListener?"addEventListener":"attachEvent",eventer=window[eventMethod],messageEvent="attachEvent"==eventMethod?"onmessage":"message";eventer(messageEvent,function(e){if(e.origin=='https://embed.calculoid.com'){if(e.data.startsWith("height;")){document.getElementById("calc-73236").style.height=e.data.split("height;")[1]+"px"}else if(e.data.startsWith("url;")){window.location.href=e.data.split("url;")[1]}}},!1)</script><iframe id="calc-73236" src="https://embed.calculoid.com/?calcId=73236&apiKey=5dbdbe3172a1b&showTitle=true&showDescription=true" scrolling="no" style="width: 100%; border: none;"></iframe>
         </div>
       </div>
-    </section>
-    <section class="container">
-        <div class="container" id="slideContainer">
-            <div class="row">
-                <div class="twelve columns">
-                    {{>app}}
-                </div>
-            </div>
+      <div id="two" class="fade-out row">
+        {{>app}}
+      </div>
+      <div id="three" class="fade-out last container">
+        <div class="row">
+          <div class="twelve columns">
+            <p>
+              3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptas, ipsam atque blanditiis vel velit nisi recusandae unde, dolore pariatur accusantium eveniet iusto nesciunt, neque tenetur veritatis, ullam quisquam! Maxime.
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+
   </main>
   <footer>
-    <button type="button" name="button" id="prevBtn">Prev</button>
-    <button type="button" name="button" id="nextBtn">Next</button>
+    <div class="container">
+      <div class="row">
+        <div class="twleve columns">
+          <a href="JavaScript:void(0)" onclick="fadeOne()" id="buttonOne" class="row">
+            <p>
+              Click here to apply <i class="fas fa-file"></i>
+            </p>
+          </a>
+          <a href="JavaScript:void(0)" onclick="fadeTwo()" id="buttonTwo" class="fade-out row">
+            <p>
+              Click here to submit the form <i class="fas fa-thumbs-up"></i>
+            </p>
+          </a>
+          <a href="JavaScript:void(0)" onclick="fadeThree()" id="buttonThree" class="fade-out row">
+            <p>
+              Click here to go back to the start page
+            </p>
+          </a>
+        </div>
+    </div>
   </footer>
 </body>
