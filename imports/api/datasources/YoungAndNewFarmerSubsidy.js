@@ -85,9 +85,9 @@ export const Data = {
               "id": 10,
               "title": ["Beneficiary / Business name"],
               "type": "radio",
-              "options": [
-                "I am supplying proof for the young farmer payment",
-                "I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"
+              "choices": [
+                ["I am supplying proof for the young farmer payment"],
+                ["I have previously, successfully applied for BPS and therefore don't need to supply a new certificate"]
               ],
               "simple_description": "Please see page 92 of the ‘Basic Payment Scheme: rules for 2019’, for more information. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/814208/BPS_2019_scheme_rules_v2.0.pdf Also ask a registered accountant or solicitor to fill in the certificate at the end of this form.",
               "attachment_enabled": true,
