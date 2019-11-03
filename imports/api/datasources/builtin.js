@@ -37,5 +37,4 @@ export const Sections = [
             {title: i18n.how_many_animals_do_you_have, type: 'number', range: {min: 0}},
         ],
     },
-    {},
 ];

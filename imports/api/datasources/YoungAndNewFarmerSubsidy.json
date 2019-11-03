@@ -20,7 +20,7 @@
               }
             },
             {
-              "question": "Applicants full name"
+              "question": "Applicants full name",
               "id": 4,
               "type": "string",
               "simple_description": "",
@@ -80,7 +80,7 @@
               }
             },
             {
-              "question": "Young farmer payment - proof",
+              "title": "Young farmer payment - proof",
               "id": 9,
               "question": {
                 "Beneficiary / Business name": {
