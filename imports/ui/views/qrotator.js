@@ -21,9 +21,15 @@ Template.qrotator.helpers({
 
 Template.qrotator.events({
     'click .js-prev'(e, t){
-        t.data.counter.set(t.data.counter.get() - 1);
+        $("#slideContainer").slideUp().delay(300).slideDown();
+        setTimeout(function () {
+            t.data.counter.set(t.data.counter.get() - 1);
+        }, 290);
     },
     'click .js-next'(e, t){
-        t.data.counter.set(t.data.counter.get() + 1);
+        $("#slideContainer").slideUp().delay(300).slideDown();
+        setTimeout(function () {
+            t.data.counter.set(t.data.counter.get() + 1);
+        }, 290);
     },
 });

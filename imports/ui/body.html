@@ -52,20 +52,10 @@
                 </div>
             </div>
         </div>
-        <button id="buttonSlide">Slide</button>
     </section>
   </main>
   <footer>
     <button type="button" name="button" id="prevBtn">Prev</button>
     <button type="button" name="button" id="nextBtn">Next</button>
   </footer>
-
-<script>
-    $(document).ready(function(){
-        $("#buttonSlide").click(function(){
-            $("#slideContainer").slideToggle();
-            $("#nextBtn").trigger('click').delay(800);
-        });
-    });
-</script>
 </body>
