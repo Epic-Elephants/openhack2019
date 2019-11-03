@@ -22,12 +22,14 @@ Template.qrotator.helpers({
 Template.qrotator.events({
     'click .js-prev'(e, t){
         $("#questionSlider").slideUp().delay(400).slideDown();
+        $(".js-field").val("");
         setTimeout(function () {
             t.data.counter.set(t.data.counter.get() - 1);
         }, 300);
     },
     'click .js-next'(e, t){
         $("#questionSlider").slideUp().delay(400).slideDown();
+        $(".js-field").val("");
         setTimeout(function () {
             t.data.counter.set(t.data.counter.get() + 1);
         }, 300);
