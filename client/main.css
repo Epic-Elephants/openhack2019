@@ -89,6 +89,8 @@ main h1 {
 #one,
 #two,
 #three {
+  max-height: 100vh;
+  overflow-y: scroll;
   width: 100%;
   border-radius: 20px;
   background: rgba(255, 255, 255, .95);
