@@ -11,7 +11,7 @@
               "question": "Beneficiary / Business name",
               "id": 3,
               "type": "string",
-              "simple_description": "The person or entity that will receive money through this application if successful",
+              "simple_description": "The person or entity that will receive money through this application if successful ",
               "attachment_enabled": false,
               "notes_enabled": false,
               "signature_item": false,
