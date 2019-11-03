@@ -2,6 +2,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 /* CSS declarations go here */
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -14,43 +17,103 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-/* ____________________ Header */
-header {
-  margin: 0 0 5% 0;
-  padding: 0;
+header, main, footer {
+  position: fixed;
+  width: 100vw;
+}
+header, footer {
   z-index: 2;
-  top: 0;
-  width: 100%;
+}
+/* ________________ header */
+header {
+  height: 5vh;
   background: #fff;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.07);
 }
-header > .row > .two {
-  padding: 0 1% 0 0;
-  text-align: right;
-  background: #234483;
-}
-header > .row > .ten {
-  padding: 3% 0 0 0;
-}
-header img {
-  width: 50%;
-}
 header h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 3rem;
   font-weight: 200;
   font-size: 2em;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07);
 }
-/* ____________________ Main */
-main > section {
-  border-radius: 20px;
-  background: rgba(255, 255, 255, .95);
+@media screen and (max-width: 950px){
+  header h1 {
+    font-size: 2rem;
+    text-align: right;
+  }
 }
-main > section > div > div {
-  padding: 5%;
+@media screen and (max-width: 500px) {
+  header h1 {
+    display: none;
+  }
+}
+/* ________________ main */
+main {
+  padding: 10vh 0;
+  z-index: 1;
+  height: 100vh;
+  overflow-y: scroll;
+}
+main .carousel {
+  height: 100%;
+  width: 100%;
+}
+main .container {
+  position: relative;
 }
 main h1 {
   font-weight: 100;
   color: #234483;
 }
-/* ____________________ Carousel */
+#one,
+#two,
+#three,
+#buttonOne,
+#buttonTwo,
+#buttonThree {
+  padding: 5%;
+  position: absolute;
+}
+#one,
+#two,
+#three {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+}
+/* ________________ carousel */
+#buttonOne,
+#buttonTwo,
+#buttonThree,
+#one,
+#two,
+#three,
+.fade-out {
+  transition: 1.5s;
+}
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ________________ footer */
+footer {
+  padding-top: 100px;
+  bottom: 0;
+  height: 20vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+footer .row {
+  position: relative;
+}
+footer a {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #234483;
+  text-align: center;
+}
