@@ -21,13 +21,13 @@ Template.qrotator.helpers({
 
 Template.qrotator.events({
     'click .js-prev'(e, t){
-        $("#two").slideUp().delay(400).slideDown();
+        $("#questionSlider").slideUp().delay(400).slideDown();
         setTimeout(function () {
             t.data.counter.set(t.data.counter.get() - 1);
         }, 300);
     },
     'click .js-next'(e, t){
-        $("#two").slideUp().delay(400).slideDown();
+        $("#questionSlider").slideUp().delay(400).slideDown();
         setTimeout(function () {
             t.data.counter.set(t.data.counter.get() + 1);
         }, 300);
